@@ -1,0 +1,15 @@
+[package]
+name = "modulix-store-client"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "modulix_store_client"
+crate-type = ["staticlib", "rlib"]
+
+[dependencies]
+zbus = "5"
+serde_json = "1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
